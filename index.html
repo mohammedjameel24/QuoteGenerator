@@ -10,32 +10,6 @@
     <title>Dynamic Quote Generator</title>
 </head>
 
-<style>
-    .darkmode--activated div,
-    .darkmode--activated li,
-    .darkmode--activated button {
-        color: #fff;
-    }
-
-    .button {
-        isolation: isolate;
-    }
-    h1{
-        isolation: isolate;
-    }
-    .inner neumorphic neumorphic--pressed {
-        isolation: isolate;
-    }
-
-    #newQ {
-        isolation: isolate;
-    }
-
-    .darkmode--activated .logo {
-        mix-blend-mode: difference;
-    }
-</style>
-
 <body>
 
     <div class="container">
@@ -65,33 +39,21 @@
                 </div>
             </div>
         </div>
+                <div class="Color-stripe">
+            <abbr title="Pinky Pinkish" id="pink">
+                <div class="pink"></div>
+            </abbr>
+            <abbr title="Greish Grey" id="grey">
+                <div class="grey" ></div>
+            </abbr>
+            <abbr title="Bluish blue" id="blue">
+                <div class="blue" ></div>
+            </abbr>
+        </div>
     </div>
 
     <script src="Assets/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-        function addDarkmodeWidget() {
-            new Darkmode().showWidget();
-        }
-        window.addEventListener('load', addDarkmodeWidget);
 
-        const options = {
-            bottom: '200px', // default: '32px'
-            right: '32px', // default: '32px'
-            left: 'unset', // default: 'unset'
-            time: '0.5s', // default: '0.3s'
-            mixColor: '#fff', // default: '#fff'
-            backgroundColor: '#fff',  // default: '#fff'
-            buttonColorDark: '#100f2c',  // default: '#100f2c'
-            buttonColorLight: '#fff', // default: '#fff'
-            saveInCookies: false, // default: true,
-            label: '🌓', // default: ''
-            autoMatchOsTheme: true // default: true
-        }
-
-        const darkmode = new Darkmode(options);
-        darkmode.showWidget();
-    </script>
 </body>
 
 </html>
